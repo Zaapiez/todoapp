@@ -46,8 +46,7 @@ public class TodoServlet extends HttpServlet {
 
 		for (int i = 0; i < todos.size(); i++) {
 			Todo todo = todos.get(i);
-			out.println("{\"id\":" + todo.getId() + ", \"title\":\"" + todo.getTitle() + "\",  \"completed\":"
-					+ todo.getCompleted() + "}");
+			out.println("{\"id\":" + todo.getId() + ", \"title\":\"" + todo.getTitle() + "\",  \"completed\":"+ todo.getCompleted() + "}");
 
 			if (i < todos.size() - 1) {
 				out.print(",");
