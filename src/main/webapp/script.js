@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(error => console.error("Error fetching todos:", error));
     }
 	// Function to mark a todo as completed
-	function markAsCompleted(id) {
-	fetch(`${baseUrl}/todos?id=${id}`, {
-	method: "PUT",
-	headers: {
-	"Content-Type": "application/x-www-form-urlencoded",
-	}
-	})
+		function markAsCompleted(id) {
+		fetch(`${baseUrl}/todos?id=${id}`, {
+		method: "PUT",
+		headers: {
+		"Content-Type": "application/x-www-form-urlencoded",
+		}
+		})
 	.then(response => response.json())
 	.then(data => {
 	console.log(data.message);
