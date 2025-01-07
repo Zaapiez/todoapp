@@ -10,6 +10,7 @@ public class Todo {
 		this.title = title;
 		this.completed = false;
 	}
+	
 
 	public int getId() {
 		return id;
